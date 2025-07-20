@@ -1,4 +1,3 @@
-
 {
   "name": "to-put-into-practice-canvas",
   "version": "1.0.0",
@@ -12,7 +11,8 @@
     "react-dom": "^18.0.0",
     "react-konva": "^18.0.0",
     "konva": "^9.0.0",
-    "@supabase/supabase-js": "^2.0.0"
+    "@supabase/supabase-js": "^2.0.0",
+    "@vitejs/plugin-react": "^4.0.0"
   },
   "devDependencies": {
     "vite": "^5.0.0"
