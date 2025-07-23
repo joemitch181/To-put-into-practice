@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Put Into Practice</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>To Put Into Practice</h1>
+        <div id="section-controls">
+            <select id="section-selector">
+                <option>BJJ</option>
+                <option>Rugby Training</option>
+                <option>Rugby Coaching</option>
+            </select>
+            <button onclick="manageSections()">Manage Sections</button>
+        </div>
+    </header>
+    <main>
+        <div class="tabs">
+            <button onclick="switchTab('upload')">Smart Search</button>
+            <button onclick="switchTab('browse')">Browse Web</button>
+        </div>
+        <section id="upload-tab" class="tab active">
+            <h2>Upload & Search</h2>
+            <div id="upload-area" ondrop="handleDrop(event)" ondragover="allowDrop(event)">
+                <p>Drag and drop files here or click to upload.</p>
+                <input type="file" id="file-input" multiple>
+            </div>
+            <input type="text" id="search-input" placeholder="Type to search...">
+            <div id="search-results"></div>
+        </section>
+        <section id="browse-tab" class="tab">
+            <h2>Data Map</h2>
+            <div id="map-container">[Spider Web Placeholder]</div>
+        </section>
+    </main>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
